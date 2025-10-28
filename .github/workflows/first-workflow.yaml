@@ -28,4 +28,4 @@ jobs:
         run: systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
       
       - name: Error steps 
-        run: commanddoesnot
+        run: Write-Output "Widnows String"
