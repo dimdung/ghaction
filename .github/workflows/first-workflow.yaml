@@ -13,5 +13,5 @@ jobs:
         run: |
           node -v 
           npm -v 
-          python -v 
+          cat /etc/issue.net
           
