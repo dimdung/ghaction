@@ -34,4 +34,4 @@ jobs:
     runs-on: ubutnu-latest
     steps:
       - name: Check Linux OS version
-        run: lsb_release -a
+        run: uname -a 
