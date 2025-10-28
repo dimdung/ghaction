@@ -14,4 +14,18 @@ jobs:
           node -v 
           npm -v 
           cat /etc/issue.net
-          
+  parallel-job-macos:
+    runs-on: macos-latest
+    steps:
+      - name: Check MacOs Version 
+        run: sw_vers
+  
+  dependent-job:
+    runs-on: windows-latest 
+    needs: [run-shell-commands]
+    steps:
+      - name: Check Windows Version 
+        run: systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
+      
+      - name: Error steps 
+        run: commanddoesnot
