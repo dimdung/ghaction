@@ -29,3 +29,9 @@ jobs:
       
       - name: Error steps 
         run: Write-Output "Widnows String"
+
+  linux_os_ver_check:
+    runs-on: ubutnu-latest
+    steps:
+      - name: Check Linux OS version
+        run: lsb_release -a
