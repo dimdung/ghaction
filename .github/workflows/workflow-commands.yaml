@@ -1,4 +1,6 @@
-name: Workflow Commands Example
+name: Workflow Commands
+
+run-name: ${{ github.actor }}-Workflow Commands 
 
 on: [push]
 
