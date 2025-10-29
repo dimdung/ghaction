@@ -36,5 +36,5 @@ jobs:
       - name: Check Windows Version 
         run: systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
       
-      - name: String Output using Windows Commands 
+      - name: String Output using Windows 
         run: Write-Output "Widnows String"
