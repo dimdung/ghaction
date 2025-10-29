@@ -25,8 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greet User 
-        run: echo "Hello ${{ github.actor }} ! Welcome to Github Actions."
-        
+        run: echo "Hello ${{ github.actor }} ! Welcome to Github Actions. It's great to have you here."
+
   dependent-job:
     runs-on: windows-latest 
     needs: [run-shell-commands]
